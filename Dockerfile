@@ -17,6 +17,8 @@ FROM ghcr.io/gsmlg-dev/alpine:3.22
 LABEL maintainer="Jonathan Gao <gsmlg.com@gmail.com>"
 LABEL VERSION="$VERSION"
 
+LABEL org.opencontainers.image.source="https://github.com/gsmlg-ci/go-ethereum"
+
 ENV VERSION="$VERSION"
 
 COPY --from=builder /src/build/bin /usr/local/bin
